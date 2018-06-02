@@ -1,5 +1,7 @@
 #!groovy
 
+@Library('skymind@feature/enable-tests') _
+
 /*******************************************************************************
  * Copyright (c) 2015-2018 Skymind, Inc.
  *
