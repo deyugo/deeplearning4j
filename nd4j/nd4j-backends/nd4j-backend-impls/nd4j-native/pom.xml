@@ -145,7 +145,7 @@
                 <configuration>
                     <environmentVariables>
                         <LD_LIBRARY_PATH>${env.LD_LIBRARY_PATH}:${user.dir}:${libnd4jhome}/blasbuild/cpu/blas/</LD_LIBRARY_PATH>
-                        <LD_PRELOAD>/usr/lib64/libasan.so.2</LD_PRELOAD>
+                        <LD_PRELOAD>/usr/lib64/libasan.so.3</LD_PRELOAD>
                     </environmentVariables>
                     <includes>
                         <include>*.java</include>
