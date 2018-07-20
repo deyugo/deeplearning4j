@@ -144,7 +144,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <environmentVariables>
-                        <LD_LIBRARY_PATH>/usr/lib64/libasan.so.4:${env.LD_LIBRARY_PATH}:${user.dir}:${libnd4jhome}/blasbuild/cpu/blas/</LD_LIBRARY_PATH>
+                        <LD_LIBRARY_PATH>${env.LD_LIBRARY_PATH}:${user.dir}:${libnd4jhome}/blasbuild/cpu/blas/</LD_LIBRARY_PATH>
+                        <LD_PRELOAD>/usr/lib64/libasan.so.4</LD_PRELOAD>
                     </environmentVariables>
                     <includes>
                         <include>*.java</include>
