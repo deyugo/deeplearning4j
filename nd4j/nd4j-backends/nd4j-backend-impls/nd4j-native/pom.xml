@@ -143,6 +143,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+                    <properties>
+                        <javacpp.compilerOptions>-g -O0 -fsanitize=address</javacpp.compilerOptions>
+                    </properties>
                     <environmentVariables>
                         <LD_LIBRARY_PATH>${env.LD_LIBRARY_PATH}:${user.dir}:${libnd4jhome}/blasbuild/cpu/blas/</LD_LIBRARY_PATH>
                         <LD_PRELOAD>/usr/lib64/libasan.so.3</LD_PRELOAD>
